@@ -1,0 +1,204 @@
+body{
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4; 
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+header{
+	background-color: #35424A;
+	border-bottom: 3px solid #E8491D;
+	color: white;
+	min-height: 100px;
+}
+
+.logo span{
+	color: #E8491D;
+}
+
+header ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none; 
+}
+
+header ul li{
+	display: inline;
+	padding: 0 20px;
+}
+header ul a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header ul a:hover{
+	color: #CCCCCC;
+	font-weight: bold;
+}
+
+.now a{
+	color: #E8491D;
+}
+
+header .logo{
+	padding-top: 30px;
+	float: left;
+}
+
+header .logo h1{
+	margin: 0;
+}
+
+nav{
+	float: right;
+	padding-top: 40px;
+}
+
+/*Showcase*/
+
+.showcase{
+	background: url("../img/showcase.jpg") no-repeat 0 -400px;
+	min-height: 400px;
+	color: white;
+	text-align: center;
+}
+
+.showcase h1{
+	font-size: 350%;
+	padding-top: 70px;
+}
+
+.showcase p{
+	font-size: 135%;
+}
+
+/*Newsletter*/
+.newsletter{
+	background-color: #35424A;
+	color: white;
+	min-height: 100px;
+}
+
+.newsletter h1{
+	float: left;
+	padding-top: 20px;
+}
+
+.newsletter form{
+	float: right;
+	padding-top: 35px;
+}
+
+.newsletter input{
+	height: 30px;
+	width: 250px;
+}
+
+.newsletter button{
+	height: 35px;
+	background-color: #E8491D;
+	color: white;
+	border: none;
+}
+
+/*Boxes*/
+.htmllogo img, .csslogo img, .brushlogo img{
+	height: 80px;
+}
+
+.htmllogo, .csslogo, .brushlogo{
+	width: 30%;
+	float: left;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+	margin-bottom: 80px;
+}
+
+
+/*Footer*/
+footer{
+	background-color: #E8491D;
+	min-height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 15px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+
+/*About*/
+.about{
+	width: 60%;
+	float: left;
+}
+
+.what-we-do{
+	color: white;
+	width: 30%;
+	float: right;
+	background-color: #35424A;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.colored-article{
+	color: white;
+	background-color: #35424A;
+	padding: 5px;
+}
+
+/*Services*/
+
+.services{
+	width: 60%;
+	float: left;
+	margin-bottom: 130px;
+}
+
+.quote{
+	width: 30%;
+	float: right;
+	background-color: #35424A;
+	margin-top: 30px;
+	color: white;
+	padding: 10px;
+}
+
+.services ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.services li{
+		border: 1px solid #35424A;
+		padding: 20px;
+		width: 100%;
+		margin-bottom: 10px;
+}
+
+.quote input{
+	width: 90%;
+	height: 30px;
+	padding-left: 10px;
+}
+
+.quote button{
+	background-color: #E8491D;
+	border: none;
+	color: white;
+	width: 25%;
+	height: 40px;
+	margin-top: 10px;
+}
