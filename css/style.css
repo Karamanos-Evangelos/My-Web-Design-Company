@@ -1,3 +1,9 @@
+*{
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+  }
+
 body{
 	font-size: 15px;
 	line-height: 1.5;
@@ -11,6 +17,12 @@ body{
 	width: 80%;
 	margin: auto;
 	overflow: hidden;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 header{
@@ -70,6 +82,7 @@ nav{
 	min-height: 400px;
 	color: white;
 	text-align: center;
+	background-size: cover;
 }
 
 .showcase h1{
@@ -120,7 +133,6 @@ nav{
 	float: left;
 	text-align: center;
 	padding: 30px 10px 20px 10px;
-	margin-bottom: 80px;
 }
 
 
@@ -131,11 +143,18 @@ footer{
 	color: white;
 	text-align: center;
 	padding-top: 15px;
+}
+
+.about-footer{
+	background-color: #E8491D;
+	min-height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 15px;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
-
 
 /*About*/
 .about{
@@ -163,7 +182,7 @@ footer{
 .services{
 	width: 60%;
 	float: left;
-	margin-bottom: 130px;
+	margin-bottom: 30px;
 }
 
 .quote{
@@ -201,4 +220,80 @@ footer{
 	width: 25%;
 	height: 40px;
 	margin-top: 10px;
+}
+
+
+
+
+/*Media Queries for mobile*/
+@media screen and (max-width: 600px){
+
+		header .logo, nav
+		{
+			float: none;
+			text-align: center;
+		}
+
+		.showcase{
+			background: url("../img/showcase.jpg") no-repeat 0 -400px;
+			min-height: 400px;
+			color: white;
+			text-align: center;
+		}
+
+		.newsletter h1{
+			float: none;
+			text-align: center;
+			padding-bottom: 0px;
+		}
+		}
+
+		.newsletter form{
+			float: none;
+			text-align: center;
+			padding-bottom: 30px;
+			padding-top: 0;
+		}
+
+		.htmllogo, .csslogo, .brushlogo,
+		.about, .what-we-do{
+			float: none;
+			text-align: center;
+			width: 100%;
+		}
+
+		/*About*/
+
+		.about-footer{
+			position: relative;
+			background-color: #E8491D;
+			min-height: 30px;
+			color: white;
+			text-align: center;
+			padding-top: 15px;
+			margin-top: 10px;
+		}
+
+
+		.services, .quote{
+			clear: both;
+			float: none;
+			box-sizing: border-box;
+			text-align: center;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 10px;
+		}
+
+		.quote button{
+			background-color: #E8491D;
+			border: none;
+			color: white;
+			width: 25%;
+			height: 40px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
 }
